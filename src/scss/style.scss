@@ -1,5 +1,19 @@
+@import 'variables';
+@import 'typography';
+@import 'layout';
+@import 'animations';
+@import 'sections';
+@import 'box';
+@import 'btn';
+@import 'form';
+
 body {
-  background: green;
-  font-size: 200%;
-  color: red;
+  background: $light;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  margin: 0 0;
+  padding: 0 0;
+  box-sizing: border-box;
 }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main id="app" class="d-flex hide">
+    <div class="bg-photo"></div>
+    <div class="tiles">
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+    </div>
+    
+    <div class="container showUp" id="app-box">
+    <div class="container">
+    
+        <h1 class="text-center bold showUpRotate">
+            PHOTO APP
+        </h1>
+    </div>
+        <div class="container d-flex justify-content-center">
+        
+            <div class="box">
+                <form action="/upload" enctype="multipart/form-data" method="POST">
+                    <p class="text-center">
+                        Choose one JPG file to upload:
+                    </p>
+                    <div class="input-file-container">  
+                        <input class="input-file" id="my-file" type="file" name="upload" accept="image/jpeg" required>
+                        <label tabindex="0" for="my-file" class="input-file-trigger text-center">Select a file...</label>
+                    </div>
+                    <p class="file-return"></p>
+                    <br>
+                    <button type="submit">Upload</button>
+                </form>
+                
+            
+            </div>
+        </div>
+        
+    </div>
+    
+        
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
+    <script src="js/page-transition.js"></script>
+    <script src="js/file-input.js"></script>
+    <script src="js/mouse-paralax.js"></script>
+</body>
+</html>

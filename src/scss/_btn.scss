@@ -1,0 +1,15 @@
+button {
+  background: $white;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid $dark;
+  font-weight: $bold;
+  text-transform: uppercase;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    background: $dark;
+    border: 1px solid $white;
+    color: $white;
+  }
+}

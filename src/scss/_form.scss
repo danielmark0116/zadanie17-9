@@ -1,0 +1,62 @@
+form {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: $light !important;
+}
+
+/*
+ * File
+ */
+
+.input-file-container {
+  position: relative;
+  width: auto;
+}
+.js .input-file-trigger {
+  display: block;
+  padding: 10px;
+  background: $white;
+  color: $dark;
+  font-size: 14px;
+  transition: all 0.4s;
+  border-radius: 5px;
+  border: 1px solid rgba($dark, 0.5);
+  box-shadow: 0 0 5px rgba($dark, 0.05);
+  cursor: pointer;
+}
+.js .input-file {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  opacity: 0;
+  padding: 14px 0;
+  cursor: pointer;
+}
+.js .input-file:hover + .input-file-trigger,
+.js .input-file:focus + .input-file-trigger,
+.js .input-file-trigger:hover,
+.js .input-file-trigger:focus {
+  background: $dark;
+  color: $white;
+}
+
+.file-return {
+  margin: 0;
+}
+.file-return:not(:empty) {
+  margin: 1em 0;
+}
+.js .file-return {
+  font-size: 0.9em;
+  font-weight: $bold;
+  text-align: center;
+}
+.js .file-return:not(:empty):before {
+  content: 'Selected file: ';
+  font-weight: $normal;
+}

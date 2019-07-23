@@ -1,0 +1,39 @@
+@keyframes showUp {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes showUpRotate {
+  from {
+    opacity: 0;
+    transform: scale(0) rotate(-360deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@mixin showUp {
+  animation: showUp 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.showUp {
+  @include showUp;
+}
+
+.showUpRotate {
+  animation: showUpRotate 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform-origin: center;
+  animation-delay: 0.1s;
+}
+
+.paralax {
+  transition: 0.1s ease-in;
+  transform-origin: center;
+}
